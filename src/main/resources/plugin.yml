@@ -1,0 +1,27 @@
+name: BuildFFA
+version: 1.0
+main: me.obvgreen.buildffa.BuildFFAPlugin
+author: ObvGreen
+api-version: 1.8
+description: BuildFFA arena for Spigot/Bukkit servers.
+softdepend: [PlaceholderAPI]
+
+commands:
+  buildffa:
+    permission: buildffa.user
+    description: Main buildffa command.
+    aliases: [bffa]
+
+permissions:
+  buildffa.user:
+    description: Allows use of /buildffa join, leave, stats, cosmetics and the hotbar GUI.
+    default: true
+  buildffa.admin:
+    description: Allows /buildffa build, reload, wipe, modify, pos1 and pos2.
+    default: op
+  buildffa.cosmetics.toxic:
+    description: Unlocks the "Toxic" kill message pack.
+    default: op
+  buildffa.cosmetics.killeffect.lightning:
+    description: Unlocks the "Lightning Strike" kill effect.
+    default: op

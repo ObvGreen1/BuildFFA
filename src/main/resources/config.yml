@@ -1,0 +1,110 @@
+settings:
+  # Name of the arena world. Must match the world folder name.
+  world: "buildffa"
+  # Name of the world players are teleported to on /buildffa leave.
+  lobby-world: "lobby"
+  # Spawn used when a player joins the arena.
+  spawn: 0.5, 147, -4.5
+  # Spawn used when a player leaves the arena.
+  lobby-spawn: 0.5, 101, 0.5
+
+# Time in seconds a player stays "in combat" after being hit.
+combat_time: 15
+
+# Highest killstreak value that has configured rewards below.
+max-configured-streak: 10
+
+# Seconds before a block placed in the arena is removed again.
+block-remove-delay: 8
+# Seconds before an arena block is restored to its original state.
+block-restore-delay: 9
+
+# Killstreak announcements (disabled by default).
+killstreak-announcements:
+  enabled: false
+  # Broadcast when a player reaches one of these streak values.
+  milestones:
+    - 5
+    - 10
+    - 15
+    - 20
+  reached-milestone-message: "&e%player% &7is on a &c%killstreak% &7killstreak!"
+  # Only announce the end of a streak at or above this value.
+  minimum-streak-to-announce-end: 5
+  streak-ended-message: "&7%player%'s &c%killstreak% &7killstreak was ended by &a%killer%&7."
+  streak-ended-no-killer-message: "&7%player%'s &c%killstreak% &7killstreak ended."
+
+# Double-jump feather.
+double-jump-feather:
+  display-name: "&fDouble Jump Feather"
+  lore:
+    - "&7Right click in mid-air to boost."
+  consume: true
+  velocity:
+    horizontal: 1.0
+    vertical: 0.8
+
+kill-rewards:
+  '2':
+    items:
+      - 'GOLDEN_APPLE:1'
+  '3':
+    items:
+      - 'GOLDEN_APPLE:1'
+  '4':
+    items:
+      - 'GOLDEN_APPLE:1'
+    potions:
+      - 'SPEED:0:15'
+  '5':
+    items:
+      - 'GOLDEN_APPLE:2'
+    potions:
+      - 'SPEED:1:15'
+      - 'JUMP:0:15'
+  '6':
+    items:
+      - 'GOLDEN_APPLE:2'
+    potions:
+      - 'SPEED:2:30'
+      - 'JUMP:1:15'
+  '7':
+    items:
+      - 'GOLDEN_APPLE:2'
+      - 'ENDER_PEARL:1'
+  '8':
+    items:
+      - 'GOLDEN_APPLE:2'
+      - 'ENDER_PEARL:1'
+  '9':
+    items:
+      - 'GOLDEN_APPLE:2'
+      - 'ENDER_PEARL:1'
+  '10':
+    items:
+      - 'GOLDEN_APPLE:2'
+      - 'ENDER_PEARL:1'
+    potions:
+      - 'SPEED:2:45'
+      - 'JUMP:4:30'
+
+# Highest Y a player may build at.
+max-build-height: 99
+# Falling below this Y kills the player.
+death-y-level: 30
+
+fireball:
+  world: "buildffa"
+  item-material: "FIREBALL" # Set to FIRE_CHARGE for versions 1.13+
+  cooldown: 2 # Cooldown in seconds. Set to 0 to disable.
+  speed: 1.5 # Multiplier for the projectile speed
+  explosion-size: 4.0 # The radius of the explosion detection
+  damage:
+    self: 2.0 # 2.0 = 1 full heart
+    enemy: 4.0 # 4.0 = 2 full hearts
+  knockback:
+    horizontal: 1.2
+    vertical: 1.0
+    base-vertical: 0.5
+  messages:
+    on-cooldown: "&cYou must wait %time%s before using another fireball!"

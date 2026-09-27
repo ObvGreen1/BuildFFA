@@ -1,0 +1,31 @@
+kill-messages:
+  default:
+    display-name: "&7Default"
+    material: "PAPER"
+    permission: ""
+    normal_kill: "&a%killer% &7killed &c%victim%"
+    normal_death: "&c%victim% &7died."
+    void_kill: "&a%killer% &7knocked &c%victim% &7into the void."
+    void_death: "&c%victim% &7fell into the void."
+    combat_log: "&c%victim% &7combat logged against &a%killer%&7!"
+  toxic:
+    display-name: "&aToxic Pack"
+    material: "PAPER"
+    permission: "buildffa.cosmetics.toxic"
+    normal_kill: "&c%victim% &7was deleted by &a%killer%&7's superior skill."
+    normal_death: "&c%victim% &7took an L."
+    void_kill: "&a%killer% &7sent &c%victim% &7to the backrooms."
+    void_death: "&c%victim% &7tripped into the void."
+    combat_log: "&c%victim% &7was too scared of &a%killer% &7and rage quit!"
+
+kill-effects:
+  none:
+    display-name: "&cNo Effect"
+    material: "BARRIER"
+    permission: ""
+    type: "none"
+  lightning:
+    display-name: "&eLightning Strike"
+    material: "35:4"
+    permission: "buildffa.cosmetics.killeffect.lightning"
+    type: "lightning"

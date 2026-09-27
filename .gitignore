@@ -1,0 +1,52 @@
+# ---- Build output ----
+target/
+build/
+out/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+!.gitignore
+!gradle-wrapper.jar
+
+# ---- Third-party jars (see libs/README.md, download them manually) ----
+libs/*.jar
+
+# ---- Maven shade plugin output ----
+dependency-reduced-pom.xml
+release.properties
+.nyc_output/
+
+# ---- IDE: IntelliJ IDEA ----
+.idea/
+*.iml
+*.ipr
+*.iws
+*.imlmodules
+
+# ---- IDE: Eclipse ----
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache/
+
+# ---- IDE: NetBeans ----
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ---- IDE: VS Code ----
+.vscode/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editors / misc ----
+*.swp
+*~
+.idea_backup/
